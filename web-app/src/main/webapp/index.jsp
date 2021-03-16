@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 <body>
   <h1>Addition Program for two numbers</h1>
 <form action = "add">
