@@ -56,7 +56,7 @@ pipeline {
 		        )
 		        rtMavenRun (
 		        pom: 'web-app\\pom.xml',
-		        goals: 'mvn clean --file *.pom',
+		        goals: 'clean install',
 		        deployerId: 'deployer'
 			)
 		        rtPublishBuildInfo (
