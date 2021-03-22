@@ -37,7 +37,7 @@ pipeline {
             steps 
             {
 		            echo 'Performing Sonar Analysis'
-                withSonarQubeEnv("Sonar")
+                withSonarQubeEnv("sonar")
                 //withSonarQubeEnv(credentialsId: '5d535e8b-5b46-43e2-9766-beef95487a33', installationName: 'sonar-scanner') 
                 {
                     bat "mvn sonar:sonar"
@@ -76,7 +76,7 @@ pipeline {
 		    steps
 		    {
 			    bat 'dir'
-			    bat 'xcopy /S /Q /Y /F target\\*.war "C:\\Program Files\\Apache Software Foundation\\Tomcat 8.5\\webapps"'
+			    bat 'xcopy /S /Q /Y /F target\\*.war "C:\\Program Files\\Apache Software Foundation\\Tomcat 8.5_Tomcat88\\webapps"'
 			    //bat 'C:\\Program Files\\Apache Software Foundation\\Tomcat 8.5_Tomcat88\\bin\\catalina.bat restart'
 		    }
 	    }
