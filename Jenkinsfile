@@ -55,7 +55,7 @@ pipeline {
 		            snapshotRepo: 'example-repo-local' 
 		        )
 		        rtMavenRun (
-		        pom: 'web-app\\pom.xml',
+		        pom: 'pom.xml',
 		        goals: 'clean install',
 		        deployerId: 'deployer'
 			)
